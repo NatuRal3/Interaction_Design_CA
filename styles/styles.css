@@ -1,57 +1,57 @@
-/*############ GLOBAL ############ TEST*/
+/*############ GLOBAL ############*/
 
-html > * {
-  font-family: "Roboto", sans-serif !important;
-}
+html > * {font-family: "Roboto", sans-serif !important;}
+html,body {height: 100%;margin: 0;}
+body {display: flex; flex-direction: column;}
 
-h1,
-h2 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 1rem;
-}
-
-/* MODULAR CSS */
-.flex {
-  display: flex;
-}
-.grow {flex-grow: 1;}
-.active {text-decoration: underline;}
-.no-dec {text-decoration: none;}
-.bold {font-weight: bold;}
-.border {border: 1px solid black;}
-.space-10px {padding: 0px 10px 0px 10px;}
-.flex-column {display: flex; flex-direction: column;}
-.white-text {color: white;}
-.row {flex-direction: row; align-items: center; justify-content: space-around;}
-
-h1,h2,li,p,label {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
-a:link,a:visited {
-  text-decoration: none;
-  color: rgb(91, 130, 140);
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
+h1,h2,li,p,label {font-family: "Roboto", sans-serif; margin: 0px; padding: 0px;}
+h1,h2 {font-size: 1.7rem; text-transform: uppercase;}
+p {font-size: 1rem;}
 
 li {overflow: hidden;}
 ul {padding-left: 0;}
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
+/* MODULAR CSS */
+/* FLEX */
+.flex {display: flex;}
+.grow {flex-grow: 1;}
+.flex-center{justify-content: center;}
+.center{justify-content: center;}
+.flex-column {display: flex; flex-direction: column;}
+.row {flex-direction: row; align-items: center; justify-content: space-around;}
+.allign {align-content: center;}
+.space-evenly {justify-content: space-evenly;}
+
+
+/* Text and fonts */
+a:link,a:visited {text-decoration: none; color: white;}
+a:hover {text-decoration: none; color: rgb(91, 130, 140);}
+
+.active {text-decoration: underline;}
+.no-dec {text-decoration: none;}
+.bold {font-weight: bold;}
+.white-text {color: white;}
+.txt-center{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.mark-black{background-color: #00000080; }
+
+/* Decoration and styling */
+.border {border: 1px solid black;}
+.space-10px {padding: 0px 10px 0px 10px;}
+.radius{border-radius: 4px;}
+.header-prod {padding-top: 15px; padding-bottom: 10px;}
+
+
+/* Image */
+.img-zoom{transition: transform .3s;}
+.img-zoom:hover{transform: scale(1.05);}
+.img-grey{filter: grayscale(0%);}
+.img-grey:hover{filter: grayscale(0%);}
+.img-max {max-height: 240px;}
+
+
+/*--- Index ---*/
+.cat-dir{flex-direction: column;}
+.cat-margin{margin-top: 10px;}
 
 .container {
   max-width: 1000px;
@@ -59,7 +59,7 @@ body {
   margin-right: auto;
 }
 
-body {display: flex;flex-direction: column;}
+
 
 input,
 select,
@@ -183,9 +183,12 @@ nav li {
 }
 
 .content-tile-mid {
+  position: relative;
   text-align: center;
+  color: white;
+
   padding: 0px 5px 0px 5px;
-  align-items: flex-end;
+
 }
 
 .bottom-row {
@@ -368,42 +371,30 @@ footer {
 }
 /*----- 800Px -----*/
 @media (min-width: 800px) {
-  nav {
-    justify-content: center;
-  }
-
-  .top-row {
-    min-height: 300px;
-  }
-
-  .mid-row img {
-    max-height: 220px;
-  }
-
-  .bottom-row img {
-    max-width: 60px;
-    padding: 0px 20px 0px 20px;
-    padding-top: 50px;
-  }
+  
+  nav {justify-content: center;}
+  .top-row {min-height: 300px;}
+  .img-max {max-height: 220px;}
+  .cat-dir {flex-direction: row;}
+  .bottom-row img {max-width: 60px; padding: 0px 20px 0px 20px;padding-top: 50px;}
 }
 
 /*----- 1000Px -----*/
 @media (min-width: 1000px) {
-  nav {
-    justify-content: center;
-  }
-  .top-row {
-    min-height: 365px;
-  }
-  .mid-row img {
-    max-height: 300px;
-  }
+  nav {justify-content: center;}
+  .top-row {min-height: 365px;}
+  .img-max {max-height: 290px;}
+  .cat-dir {flex-direction: row;}
+  .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
+  .products img {max-height: 180px;}
+}
 
-  .products-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .products img {
-    max-height: 180px;
-  }
+/*----- 1200Px -----*/
+@media (min-width: 1200px) {
+  nav {justify-content: center;}
+  .top-row {min-height: 365px;}
+  .img-max {max-height: 360px;}
+  .cat-dir {flex-direction: row;}
+  .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
+  .products img {max-height: 180px;}
 }
