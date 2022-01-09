@@ -57,8 +57,9 @@ a:hover {text-decoration: none; color: rgb(91, 130, 140);}
 
 /* Forms */
 .form-container{width: 270px; padding:0px 40px 30px;}
-.form-message{height: 100px;}
-.form-input {border: #000000 solid 1px;}
+.form-txtbox{height: 100px;}
+.form-input {border: #000000 solid 1px; font-size: 0.9rem;}
+.green-box{border: green solid 2px;}
 button:hover{color: rgb(91, 130, 140);}
 
 /* Buttons */
@@ -142,7 +143,9 @@ nav li {display: block; padding: 10px 10px;}
 .price {padding-top: 20px;padding-right: 20px;}
 
 /*--- Cart and payment ---*/
-.buy-container{padding-top: 30px; padding-bottom: 30px;}
+.buy-container{padding-bottom: 30px; flex-direction: column-reverse;}
+.form-innerdiv{flex-direction: column;}
+
 /* Cart */
 .cart-container{padding: 10px; height: 450px; width: 380px;}
 .cart-items {margin-top: 10px; background-color: #fff;}
@@ -153,9 +156,10 @@ nav li {display: block; padding: 10px 10px;}
 .space-10px {padding: 0px 10px 0px 10px;}
 
 /* Payment */
-.pay-container{max-width: 490px; padding-right: 45px;}
+.pay-container{max-width: 490px;}
 .pay-input-small{max-width: 50px;}
 .form-header {padding: 10px 0px;}
+
 
 /*--- History ---*/
 .history-container{max-width: 1000px; margin-left: auto;margin-right: auto; padding: 20px;}
@@ -186,14 +190,17 @@ footer {
   main {grid-template-columns: 1fr 1fr;}
   header {justify-content: start;align-items: flex-end;}
   header label {display: none;}
+  nav {display: flex; position: relative;top: 0px;align-items: flex-end;}
+  footer {justify-content: space-evenly; padding: 0px; max-width: 100%;}
+
   .top-row {min-height: 350px;}
   .products-list {grid-template-columns: repeat(2, minmax(0, 1fr));}
   .products img {max-height: 200px;}
   .preview {flex-direction: row; align-items: flex-start;}
   .preview-small {flex-direction: column;}
-  footer {justify-content: space-evenly; padding: 0px; max-width: 100%;}
   .footer-container{width: 200px;flex-direction: column;}
-  nav {display: flex; position: relative;top: 0px;align-items: flex-end;}
+  
+
 }
 
 /*-- 800Px --*/
@@ -207,6 +214,9 @@ footer {
   .footer-container{width: 900px;flex-direction: row;}
   .form-container{width: 900px;}
   .form-message{height: 300px;}
+
+
+
 }
 
 /*-- 1000Px --*/
@@ -218,6 +228,12 @@ footer {
   .grid-prod-temp{ grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products img {max-height: 180px;}
+  .buy-container {flex-direction: row; padding-top: 30px;}
+  .pay-container {padding-right: 45px;}
+  .form-innerdiv {flex-direction: row;}
+
+
+
 }
 
 /*-- 1200Px --*/
@@ -228,4 +244,7 @@ footer {
   .img-max {max-height: 360px;}
   .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products img {max-height: 180px;}
+
+
+  
 } 

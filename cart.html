@@ -33,7 +33,9 @@
         <div class="pay-container flex column">
           <form id="chechoutBuyForm" action="">
             <div class="pay-container flex radius space-items column">
+              
               <h1 class="form-header">Billing Information</h1>
+              
               <label for="pay-fname">First Name<span class="red">*</span></label>
               <input type="text" class="form-input" minlength="3" placeholder="John" required />
 
@@ -44,7 +46,7 @@
               <input type="email" class="form-input" minlength="6" placeholder="John.doe@sample.com" required />
 
               <label for="pay-tel">Telephone</label>
-              <input type="tel" class="form-input" minlength="8" placeholder="+47 12345678" />
+              <input type="tel" class="form-input" minlength="8" placeholder="12345678" />
 
               <label for="pay-adress">Adress<span class="red">*</span></label>
               <input type="text" class="form-input" minlength="8" placeholder="John doe street" required />
@@ -53,33 +55,37 @@
               <!-- Country list from JS (js/countryList.js) -->
               <select id="country" name="country" class="country-list"></select>
 
-              <div class="flex row">
+              <div class="flex form-innerdiv">
                 <label for="pay-region">Region<span class="red">*</span></label>
                 <input type="text" class="form-input" placeholder="Viken" required />
 
                 <label for="pay-zipcode">Zipcode<span class="red">*</span></label>
-                <input type="number" class="form-input pay-input-small" minlength="4" placeholder="1487" required />
+                <input type="number" class="form-input pay-input-small" minlength="4" placeholder="1234" required />
               </div>
             </div>
             <div class="pay-container flex radius space-items column">
               <h2 class="form-header">Payment</h2>
-              <label for="">Name on Card<span class="red">*</span></label>
-              <input type="text" class="form-input" />
+              
+              <label for="pay-card-name">Name on Card<span class="red">*</span></label>
+              <input type="text" class="form-input" placeholder="John F. Doe" />
 
-              <label for="">Card Number<span class="red">*</span></label>
-              <input type="text" class="form-input" />
-              <div class="flex row">
-                <label for="">Exp Month<span class="red">*</span></label>
+              <label for="pay-card-num">Card Number<span class="red">*</span></label>
+              <input type="text" class="form-input" placeholder="1234 1234 1234 1234" />
+
+              <div class="flex form-innerdiv">
+                <label for="pay-card-expm">Exp Month<span class="red">*</span></label>
                 <input type="month" class="form-input pay-input-small" />
-                <label for="" class="">Exp Year<span class="red">*</span></label>
+                
+                <label for="pay-card-namey">Exp Year<span class="red">*</span></label>
                 <input type="number" class="form-input pay-input-small" />
-                <label for="">CVV<span class="red">*</span></label>
+                
+                <label for="pay-card-CVV">CVV<span class="red">*</span></label>
                 <input type="number" class="form-input pay-input-small" />
 
               </div>
               <p><span class="red">*</span> = Required</p>
             </div>
-            <button class="formSuccess button button-small white-text noborder radius">Buy</button>
+            <button class="buySuccess button button-small white-text noborder radius">Buy</button>
           </form>
         </div>
 
@@ -113,6 +119,7 @@
     <footer class="flex" />
   </body>
   <script src="js/countryList.js"></script>
+  <script src="js/cartBuy.js"></script>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
 </html>
