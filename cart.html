@@ -29,35 +29,93 @@
     <header></header>
 
     <main class="center-items grow">
-      <section class="center-items">
-        <div class="flex column items-center">
-          <div class="cart-items flex row items-center border">
+      <section class="flex center">
+        <div class="pay-container flex column">
+          <form id="" action="">
+            <div class="pay-container flex radius space-items column">
+              <h1 class="form-header">Billing Information</h1>
+              <label for="pay-fname">First Name<span class="red">*</span></label>
+              <input type="text" class="form-input" minlength="3" placeholder="John" required />
+
+              <label for="pay-lname">Last Name<span class="red">*</span></label>
+              <input type="text" class="form-input" minlength="2" placeholder="Doe" required />
+
+              <label for="pay-email">Email<span class="red">*</span></label>
+              <input type="email" class="form-input" minlength="6" placeholder="John.doe@sample.com" required />
+
+              <label for="pay-tel">Telephone</label>
+              <input type="tel" class="form-input" minlength="8" placeholder="+47 12345678" />
+
+              <label for="pay-adress">Adress<span class="red">*</span></label>
+              <input type="text" class="form-input" minlength="8" placeholder="John doe street" required />
+
+              <label for="pay-country">Country<span class="red">*</span></label>
+              <!-- ADD COUNTRY LIST FROM JS. -->
+              <select id="country" name="country" class="country-list"></select>
+
+              <div class="flex row">
+                <label for="pay-region">Region<span class="red">*</span></label>
+                <input type="text" class="form-input" placeholder="Viken" required />
+
+                <label for="pay-zipcode">Zipcode<span class="red">*</span></label>
+                <input type="number" class="form-input pay-input-small" minlength="4" placeholder="1487" required />
+              </div>
+            </div>
+            <div class="pay-container flex radius space-items column">
+              <h2 class="form-header">Payment</h2>
+              <label for="">Name on Card<span class="red">*</span></label>
+              <input type="text" class="form-input" />
+
+              <label for="">Card Number<span class="red">*</span></label>
+              <input type="text" class="form-input" />
+              <div class="flex row">
+                <label for="">Exp Month<span class="red">*</span></label>
+                <input type="month" class="form-input pay-input-small" />
+                <label for="" class="">Exp Year<span class="red">*</span></label>
+                <input type="number" class="form-input pay-input-small" />
+                <label for="">CVV<span class="red">*</span></label>
+                <input type="number" class="form-input pay-input-small" />
+
+              </div>
+              <p><span class="red">*</span> = Required</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="cart-container flex column items-center cart-color radius">
+          <h1>Shopping cart</h1>
+          <div class="cart-items flex row items-center radius">
             <div class="space-10px"><img src="images/products/men/men_jacket2.jpg" alt="male jacket" /></div>
             <div class="space-10px"><h1>Mountain</h1></div>
             <div class="space-10px"><p>Price:</p></div>
             <div class="space-10px"><p class="bold">&nbsp;499 $</p></div>
           </div>
-          <div class="cart-items flex row items-center border">
+          <div class="cart-items flex row items-center radius">
             <div class="space-10px"><img src="images/products/women/women_jacket3.jpg" alt="women jacket" /></div>
             <div class="space-10px"><h1>Mountain</h1></div>
             <div class="space-10px"><p>Price:</p></div>
             <div class="space-10px"><p class="bold">&nbsp;599 $</p></div>
           </div>
-          <div class="cart-items flex row items-center border">
+          <div class="cart-items flex row items-center radius">
             <div class="space-10px"><img src="images/products/kid/kids_jacket3.jpg" alt="childer jacket" /></div>
             <div class="space-10px"><h1>Mountain</h1></div>
             <div class="space-10px"><p>Price:</p></div>
             <div class="space-10px"><p class="bold">&nbsp;599 $</p></div>
           </div>
-          <div class="cart-buy">
-            <a href="checkout.html" class="button button-large">buy</a>
+          <div>
+            <h2>Total: 1697$</h3>
           </div>
+          
+          <!-- <div class="cart-buy">
+            <a href="checkout.html" class="button button-large">buy</a>
+          </div> -->
         </div>
       </section>
     </main>
 
     <footer class="flex" />
   </body>
+  <script src="js/countryList.js"></script>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
 </html>
