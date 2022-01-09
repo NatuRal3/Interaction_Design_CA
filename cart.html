@@ -67,20 +67,20 @@
               <h2 class="form-header">Payment</h2>
               
               <label for="pay-card-name">Name on Card<span class="red"> *&nbsp;</span></label>
-              <input type="text" class="form-input" placeholder="John F. Doe" />
+              <input type="text" class="form-input" placeholder="John F. Doe" required />
 
               <label for="pay-card-num">Card Number<span class="red"> *&nbsp;</span></label>
-              <input type="text" class="form-input" placeholder="1234 1234 1234 1234" />
+              <input type="text" class="form-input" placeholder="1234 1234 1234 1234" required />
 
               <div class="flex form-innerdiv">
                 <label for="pay-card-expm">Exp Month<span class="red"> *&nbsp;</span></label>
-                <input type="month" class="form-input pay-input-small" />
+                <input type="number" class="form-input pay-input-small" required />
                 
                 <label for="pay-card-namey">Exp Year<span class="red"> *&nbsp;</span></label>
-                <input type="number" class="form-input pay-input-small" />
+                <input type="number" class="form-input pay-input-small" required />
                 
                 <label for="pay-card-CVV">CVV<span class="red"> *&nbsp;</span></label>
-                <input type="number" class="form-input pay-input-small" />
+                <input type="number" class="form-input pay-input-small" required />
 
               </div>
               <p><span class="red"> *&nbsp;</span> = Required</p>
