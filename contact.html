@@ -35,20 +35,23 @@
 
       <div class="flex center allign">
         <form id="contactForm" class="flex form-container radius space-items column">
-          <label for="formFirstName">First Name:</label>
+          <label for="formFirstName">First Name <span class="red">*</span></label>
           <input class="form-input" type="text" id="formFirstName" name="formFirstName" required />
 
-          <label for="formLastName">Last Name:</label>
+          <label for="formLastName">Last Name <span class="red">*</span></label>
           <input class="form-input" type="text" id="formLastName" name="formLastName" required />
 
-          <label for="formEmail">Email:</label>
+          <label for="formEmail">Email <span class="red">*</span></label>
           <input class="form-input" type="email" id="formEmail" name="formEmail" required />
 
-          <label for="formSubject">Subject:</label>
+          <label for="formSubject">Subject <span class="red">*</span></label>
           <input class="form-input" type="text" id="formSubject" name="formSubject" minlength="5" required />
 
-          <label for="formMessage">Message:</label>
+          <label for="formMessage">Message <span class="red">*</span></label>
           <textarea class="form-input form-txtbox" type="text" id="formMessage" class="form-message" name="formMessage" minlength="15" maxlength="500" required cols="40" rows="5"></textarea>
+          
+          <p><span class="red">*</span> = Required</p>
+          
           <button class="formSuccess button button-small white-text noborder radius">Submit</button>
         </form>
       </div>
