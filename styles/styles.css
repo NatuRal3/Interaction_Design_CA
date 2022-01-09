@@ -142,10 +142,12 @@ nav li {display: block; padding: 10px 10px;}
 .price {padding-top: 20px;padding-right: 20px;}
 
 /*--- Cart and payment ---*/
+.buy-container{padding-top: 30px; padding-bottom: 30px;}
 /* Cart */
 .cart-container{padding: 10px; height: 450px; width: 380px;}
 .cart-items {margin-top: 10px; background-color: #fff;}
 .cart-items img {max-height: 100px;}
+.cart-price {margin-top: 10px;}
 .cart-buy {padding-top: 10px;padding-bottom: 10px;}
 .cart-color {background-color: rgb(91, 130, 140,0.5);}
 .space-10px {padding: 0px 10px 0px 10px;}

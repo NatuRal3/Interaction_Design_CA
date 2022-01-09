@@ -29,9 +29,9 @@
     <header></header>
 
     <main class="center-items grow">
-      <section class="flex center">
+      <section class="buy-container flex center">
         <div class="pay-container flex column">
-          <form id="" action="">
+          <form id="chechoutBuyForm" action="">
             <div class="pay-container flex radius space-items column">
               <h1 class="form-header">Billing Information</h1>
               <label for="pay-fname">First Name<span class="red">*</span></label>
@@ -50,7 +50,7 @@
               <input type="text" class="form-input" minlength="8" placeholder="John doe street" required />
 
               <label for="pay-country">Country<span class="red">*</span></label>
-              <!-- ADD COUNTRY LIST FROM JS. -->
+              <!-- Country list from JS (js/countryList.js) -->
               <select id="country" name="country" class="country-list"></select>
 
               <div class="flex row">
@@ -79,6 +79,7 @@
               </div>
               <p><span class="red">*</span> = Required</p>
             </div>
+            <button class="formSuccess button button-small white-text noborder radius">Buy</button>
           </form>
         </div>
 
@@ -102,13 +103,9 @@
             <div class="space-10px"><p>Price:</p></div>
             <div class="space-10px"><p class="bold">&nbsp;599 $</p></div>
           </div>
-          <div>
+          <div class="cart-price flex row items-center">
             <h2>Total: 1697$</h3>
           </div>
-          
-          <!-- <div class="cart-buy">
-            <a href="checkout.html" class="button button-large">buy</a>
-          </div> -->
         </div>
       </section>
     </main>
