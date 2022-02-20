@@ -11,10 +11,10 @@ headerContent.innerHTML += `
         <label for="hamburger_menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger_menu" />
         <nav>
-          <ul>
-            <li><a href="jackets_men.html">MEN</a></li>
-            <li><a href="jackets_women.html">WOMEN</a></li>
-            <li><a href="jackets_kids.html">CHILDREN</a></li>
+          <ul class="categories">
+            <li><a href="products.html#men">MEN</a></li>
+            <li><a href="products.html#women">WOMEN</a></li>
+            <li><a href="products.html#children">CHILDREN</a></li>
             <li>
               <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             </li>

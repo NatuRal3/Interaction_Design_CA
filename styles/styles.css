@@ -1,8 +1,7 @@
 /*############ GLOBAL ############*/
-
 html > * {font-family: "Roboto", sans-serif !important;}
 html,body {height: 100%;margin: 0;}
-body {display: flex; flex-direction: column;}
+body {display: flex; flex-direction: column; overflow: overlay;}
 h1,h2,li,p,label {font-family: "Roboto", sans-serif; margin: 0px; padding: 0px;}
 h1,h2 {font-size: 1rem; text-transform: uppercase;}
 input,select,textarea {border: 0px; border-radius: 4px; margin: 4px 0px 4px 0px; padding: 10px;}
@@ -139,9 +138,11 @@ nav li {display: block; padding: 10px 10px;}
 
 /*--- Preview ---*/
 .preview {max-width: 1000px;padding-top: 20px;padding-bottom: 20px;}
-.preview-small {display: flex; flex-direction: row; padding-left: 15px;}
+.preview-image-main {max-height: 350px;}
+.picture-container {flex-direction: column;}
+.preview-small {display: flex; flex-direction: row;}
 .preview-small img {max-width: 30px;}
-.preview-txt {padding-left: 10px; max-width: 300px;}
+.preview-txt {padding-left: 10px; max-width: 300px; margin-top: 10px; padding-right: 10px;}
 .price {padding-top: 20px;padding-right: 20px;}
 
 /*--- Cart and payment ---*/
@@ -203,16 +204,19 @@ footer {
   .preview {flex-direction: row; align-items: flex-start;}
   .preview-small {flex-direction: column;}
   .footer-container{width: 200px;flex-direction: column;}
+  .preview-image-main {max-height: 475px;}
+  .picture-container {flex-direction: row;}
 }
 
 /*-- 800Px --*/
 @media (min-width: 800px) {
   h1,h2 {font-size: 1.5rem;}
   nav {justify-content: center;}
-  
+
   .top-row {min-height: 300px;}
   .img-max {max-height: 220px;}
   .cat-dir {flex-direction: row;}
+  .preview-small {flex-direction: column;}
   .grid-prod-temp{ grid-template-columns: repeat(2, minmax(0, 1fr));}
   .footer-container{width: 900px;flex-direction: row;}
   .form-container{width: 900px;}
@@ -227,6 +231,7 @@ footer {
   .grid-prod-temp{ grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products img {max-height: 180px;}
+  .preview-small {flex-direction: column;}
   .buy-container {flex-direction: row; padding-top: 30px;}
   .pay-container {padding-right: 45px;}
   .cart-list {padding: 0px 10px 0px 10px;}
@@ -240,6 +245,7 @@ footer {
 @media (min-width: 1200px) {
   .top-row {min-height: 365px;}
   .img-max {max-height: 360px;}
+  .picture-container {margin-right: 15px; flex-direction: row;}
   .products-list {grid-template-columns: repeat(3, minmax(0, 1fr));}
   .products img {max-height: 180px;}
 } 
