@@ -11,8 +11,6 @@ API request and page handling with JavaScript.
 
 
 ## Built With
-
-You can list a the tech stack that you've used over here
 - [Wordpress Rest API]
 - [JavaScript]
 - [CSS]
@@ -21,47 +19,59 @@ You can list a the tech stack that you've used over here
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+To run this site locally, please follow these instructions.
 
 1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
+bash git clone git@github.com:NatuRal3/Interaction_Design_CA.git
 ```
 
-2. Install the dependencies:
+2. Install Software and Plugins:
 
+install visual studio code (VSCode)
 ```
-npm install
+https://code.visualstudio.com/
 ```
+Install Live Server plugin (VScode)
+```
+ext install ritwickdey.liveserver
+```
+
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+To locally run the site.
 
-To run the app, run the following commands:
-
-```bash
-npm run start
+```
+After cloning the repo, open VSCode 
+```
+```
+Open repo folder in VSCode
+```
+```
+Run site with Live Server. ('Go Live' in the bottom right of VSCode)
 ```
 
-## Contributing
+## Contributing Steps
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+- Open a pull request
+
+- Reach out on twitter to let us know
+
+- Provide documentation for 
+
+- Wait for code to be review
+
 
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+[My Twitter page](https://twitter.com/PubliusRR)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/mariusschei/)
 
 ## License
 
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+Ask for permission before using any of my code.
 
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
