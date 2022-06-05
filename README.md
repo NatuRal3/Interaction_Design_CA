@@ -1,6 +1,6 @@
 # Rainy Days
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/NatuRal3/Interaction_Design_CA/blob/main/images/RainyDays_Logo.jpg)
 
 A repsonsive e-comerce site with Wordpress CMS in the backend
 
