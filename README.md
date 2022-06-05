@@ -54,13 +54,14 @@ Run site with Live Server. ('Go Live' in the bottom right of VSCode)
 
 ## Contributing Steps
 
-- Open a pull request
+- Open a pull request.
 
-- Reach out on twitter to let us know
+- Reach out on twitter to let me know.
 
-- Provide documentation for 
+- Provide documentation for your code.
 
-- Wait for code to be review
+- Wait for code to be reviewed.
+
 
 
 ## Contact
